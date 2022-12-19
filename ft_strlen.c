@@ -6,7 +6,7 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 13:28:09 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/17 13:29:12 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/17 14:10:32 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ int	ft_strlen(const char *str)
 }
 // int main(){
 // 	char *arr = "42 Wolfsburg";
-// 	printf("%d", ft_strlen(arr));
+// 	printf("%s", ft_strlen(arr));
 // }
