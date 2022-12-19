@@ -6,7 +6,7 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 14:14:45 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/17 14:15:41 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/17 19:44:12 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
+	
 	while (*dst && i < dstsize)
 	{
 		dst++;
