@@ -6,11 +6,9 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 13:28:09 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/17 14:10:32 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/19 22:56:50 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include<stdio.h>
 
 int	ft_strlen(const char *str)
 {
@@ -23,7 +21,3 @@ int	ft_strlen(const char *str)
 	}
 	return (i);
 }
-// int main(){
-// 	char *arr = "42 Wolfsburg";
-// 	printf("%s", ft_strlen(arr));
-// }
