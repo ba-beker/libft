@@ -6,11 +6,9 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 14:34:25 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/19 22:48:01 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/19 22:50:52 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isalnum(int x)
 {
