@@ -6,7 +6,7 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 11:12:04 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/19 11:53:48 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/19 22:58:34 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,3 @@ void	*ft_memset(void *str, int c, size_t n)
 		*(char *)str++ = (unsigned char)c;
 	return (temp);
 }
-// int main(){
-// 	char name[] = "John";
-// 	ft_memset(name + 1,'U',2);
-// 	printf("%s",name);
-// 	return 0;
-// }
