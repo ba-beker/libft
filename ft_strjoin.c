@@ -6,7 +6,7 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 10:50:00 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/21 10:51:17 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/21 10:53:39 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	new = malloc((ft_strlen(s1) + ft_strlen(s2)) * sizeof(char) + 1);
+	if (!new)
+		return (0);
 	while (*s1)
 		new[i++] = *s1++;
 	while (*s2)
