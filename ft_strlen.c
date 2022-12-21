@@ -6,7 +6,7 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 13:28:09 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/19 23:09:16 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/21 10:22:35 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	ft_strlen(const char *str)
 {
 	int	i;
 
+	i = 0;
 	while (*str)
 	{
 		i++;
