@@ -6,24 +6,12 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 11:18:46 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/23 11:18:57 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:52:02 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include<unistd.h>
-
-int	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (*str)
-	{
-		i++;
-		str++;
-	}
-	return (i);
-}
 
 void	ft_putstr_fd(char *s, int fd)
 {

@@ -6,11 +6,11 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 22:27:23 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/16 23:00:52 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:24:23 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include<stdio.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -32,7 +32,3 @@ int	ft_atoi(const char *str)
 	}
 	return (i);
 }
-
-// int main(){
-// 	printf("%d",ft_atoi("2897"));
-// }

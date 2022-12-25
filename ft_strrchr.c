@@ -6,12 +6,12 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 21:14:14 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/15 21:20:56 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 10:19:29 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include<stdio.h>
-// #include<string.h>
+#include "libft.h"
+
 char	*ft_strrchr(const char *str, int c)
 {
 	int	there_is_point;
@@ -29,7 +29,3 @@ char	*ft_strrchr(const char *str, int c)
 		str--;
 	return ((char *) str);
 }
-// int main(){
-// 	printf("%s\n",ft_strrchr("he.llo teh;reere;fe .mohamed", '.'));
-// 	// printf("%s\n",strrchr("HelloWo.rld", '.'));
-// }

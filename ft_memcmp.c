@@ -6,11 +6,11 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 16:58:40 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/16 17:01:45 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:31:11 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
@@ -31,7 +31,3 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	}
 	return (0);
 }
-
-// int	main(){
-// 	printf("%d", ft_memcmp("Hello", "hello",2));
-// }

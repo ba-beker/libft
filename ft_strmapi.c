@@ -6,25 +6,12 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 08:44:07 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/23 08:45:02 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 10:38:34 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include "libft.h"
 #include<stdlib.h>
-
-int	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (*str)
-	{
-		i++;
-		str++;
-	}
-	return (i);
-}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -45,12 +32,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ret[i] = '\0';
 	return (ret);
 }
-// char	add(unsigned int i, char a)
-// {
-// 	return (a + i);
-// }
-// int main ()
-// {
-// 	char *s = "abc";
-// 	printf("%s", ft_strmapi(s, add));
-// }

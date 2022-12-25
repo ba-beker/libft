@@ -6,11 +6,11 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 08:48:02 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/23 10:57:46 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 01:00:50 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

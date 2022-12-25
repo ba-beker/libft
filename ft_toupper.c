@@ -6,12 +6,11 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 10:45:01 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/15 11:02:07 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 10:23:13 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include<stdio.h>
-// #include<ctype.h>
+#include "libft.h"
 
 int	ft_toupper(int ch)
 {
@@ -19,7 +18,3 @@ int	ft_toupper(int ch)
 		return (ch - 32);
 	return (ch);
 }
-// int main(){
-// 	printf("%c\n",ft_toupper('e'));
-// 	printf("%c\n",toupper('e'));
-// }

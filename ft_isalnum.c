@@ -6,23 +6,13 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 14:34:25 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/19 23:07:22 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:24:53 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalnum(int x)
 {
 	return ((x > 64 && x < 91) || (x > 96 && x < 123) || (x > 47 && x < 58));
 }
-
-// int ft_isalnum(int x){
-// 	if ((x > 64 && x < 91) || (x > 96 && x < 123) || (x > 47 && x < 58))
-// 		return 1;
-// 	return 0;
-// }
-// int main(){
-// 	printf("%d", ft_isalnum('4'));
-// 	return 0;
-// }

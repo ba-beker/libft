@@ -6,29 +6,13 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 11:15:26 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/19 23:07:11 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:24:13 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void	*ft_memset(void *str, int c, size_t n)
-{
-	void	*temp;
-
-	temp = str;
-	while (n--)
-		*(char *)str++ = (unsigned char)c;
-	return (temp);
-}
+#include "libft.h"
 
 void	ft_bzero(void *s, int nbyte)
 {
 	ft_memset(s, 0, nbyte);
 }
-// int main(){
-// 	char name[] = "Johy";
-// 	ft_bzero(name + 3,2);
-// 	printf("%s",name);
-// 	return 0;
-// }

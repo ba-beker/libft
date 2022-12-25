@@ -6,31 +6,21 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 10:50:00 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/21 10:53:39 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 01:04:06 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include<stdio.h>
 #include <stdlib.h>
-
-int	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (*str)
-	{
-		i++;
-		str++;
-	}
-	return (i);
-}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char			*new;
 	unsigned int	i;
 
+	if (!s1 || !s2)
+		return (0);
 	i = 0;
 	new = malloc((ft_strlen(s1) + ft_strlen(s2)) * sizeof(char) + 1);
 	if (!new)
@@ -42,9 +32,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new[i] = '\0';
 	return (new);
 }
-// int main()
-// {
-// 	char *arr = "42 ";
-// 	char *arr1 = "Wokfsburg";
-// 	printf("%s", ft_strjoin(arr, arr1));
-// }

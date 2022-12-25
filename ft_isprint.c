@@ -6,16 +6,13 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 22:03:42 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/19 23:07:51 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:27:24 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include<stdio.h>
+#include "libft.h"
+
 int	ft_isprint(int x)
 {
 	return (x >= 32 && x <= 126);
 }
-// int	main(){
-// 	printf("%d", ft_isprint('2'));
-// 	return 0;
-// }

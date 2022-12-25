@@ -6,23 +6,14 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/20 15:18:48 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/20 15:21:01 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:59:44 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
-int	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (*str++)
-		i++;
-	return (i);
-}
 
 char	*ft_strdup(const char *s)
 {
@@ -40,9 +31,3 @@ char	*ft_strdup(const char *s)
 	temp[j] = '\0';
 	return (temp);
 }
-// int main()
-// {
-// 	char *arr;
-// 	arr = "42 Wolfsburg";
-// 	printf("%s\n", ft_strdup(arr));
-// }

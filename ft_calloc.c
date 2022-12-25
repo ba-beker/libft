@@ -6,27 +6,12 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/20 12:32:51 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/20 12:34:39 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:24:02 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include "libft.h"
 #include <stdlib.h>
-
-void	*ft_memset(void *str, int c, size_t n)
-{
-	void	*temp;
-
-	temp = str;
-	while (n--)
-		*(char *)str++ = (unsigned char)c;
-	return (temp);
-}
-
-void	ft_bzero(void *s, int nbyte)
-{
-	ft_memset(s, 0, nbyte);
-}
 
 void	*ft_calloc(size_t nitems, size_t size)
 {
@@ -38,10 +23,3 @@ void	*ft_calloc(size_t nitems, size_t size)
 	ft_bzero(bro, nitems * size);
 	return (bro);
 }
-// int main(){
-// 	int *bro;
-// 	bro = ft_calloc(3,4);
-// 	printf("%d",*(bro + 0));
-// 	printf("%d",*(bro + 1));
-// 	printf("%d",*(bro + 2));
-// }

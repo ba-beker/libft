@@ -6,11 +6,11 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 22:46:31 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/17 12:57:04 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:30:44 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include "libft.h"
 #include <string.h>
 
 void	*ft_memchr(const void *str, int c, size_t n)
@@ -29,7 +29,3 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (0);
 }
-// int main(){
-// 	char *rel = ft_memchr("hhllo", 'l', 2);
-// 	printf("%s", rel);
-// }

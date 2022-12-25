@@ -6,11 +6,11 @@
 /*   By: mobabeke <mobabeke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 21:26:04 by mobabeke          #+#    #+#             */
-/*   Updated: 2022/12/19 23:05:44 by mobabeke         ###   ########.fr       */
+/*   Updated: 2022/12/24 00:41:18 by mobabeke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, void *src, size_t n)
 {
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, void *src, size_t n)
 	i = 0;
 	dest_c = (char *)dest;
 	src_c = (char *)src;
-	if (dest == 0)
+	if (!dest && !src)
 		return (0);
 	while (i < n)
 	{
@@ -30,10 +30,3 @@ void	*ft_memcpy(void *dest, void *src, size_t n)
 	}
 	return (dest);
 }
-// int main()
-// {
-// 	char *arr1 = "copy";
-// 	char arr2[100];
-// 	ft_memcpy(arr2, arr1, 5);
-// 	printf("%s",arr2);
-// }
