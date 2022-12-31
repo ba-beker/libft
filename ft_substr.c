@@ -20,14 +20,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (0);
-	new = malloc(len * sizeof(char));
+	if (start >= (unsigned int)ft_strlen(s))
+		return (ft_strdup(""));
+	i = ft_strlen(s + start);
+	if (i < len)
+		len = i;
+	new = (char *)malloc((len + 1) * sizeof(char));
 	if (!new)
 		return (0);
-	i = 0;
-	while (*s && i++ < start)
-		s++;
-	i = 0;
-	while (*s && i < len)
-		new[i++] = *s++;
+	ft_strlcpy(new, s + start, len + 1);
 	return (new);
 }

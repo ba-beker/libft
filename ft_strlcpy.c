@@ -10,25 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	unsigned int	i;
 
 	i = 0;
-	while (*src && i + 1 < dstsize)
+	if (!dstsize)
+		return (ft_strlen(src));
+	while (src[i] && i + 1 < dstsize)
 	{
-		*dst = *src;
-		dst++;
-		src++;
+		dst[i] = src[i];
 		i++;
 	}
-	*dst = 0;
-	while (*src)
-	{
+	dst[i] = 0;
+	i = 0;
+	while (src[i])
 		i++;
-		src++;
-	}
 	return (i);
 }
+// int main(){
+// 	char *arr  = "hello";
+// 	char des[5];
+// 	printf("%ld", ft_strlcpy(des, arr,3));
+// 	printf("%s", arr);
+// 	return 0;
+// }

@@ -12,23 +12,33 @@
 
 #include "libft.h"
 
+char	check_space(char c)
+{
+	return (c == '\f' || c == '\r' || c == '\n'
+		|| c == '\v' || c == '\t' || c == ' ');
+}
+
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	convert_to_number;
-	int	multiplier;
+	size_t	index;
+	int		multiplier;
+	int		symbol;
 
-	i = 0;
-	multiplier = 1;
-	while (*str)
-		str++;
-	str--;
-	while (*str)
+	index = 0;
+	multiplier = 0;
+	symbol = 1;
+	while (check_space(str[index]))
+		++index;
+	if (str[index] == '-' || str[index] == '+')
 	{
-		convert_to_number = *str - 48;
-		i += convert_to_number * multiplier;
-		str--;
-		multiplier *= 10;
+		if (str[index] == '-')
+			symbol = -1;
+		index++;
 	}
-	return (i);
+	while (str[index] >= '0' && str[index] <= '9')
+	{
+		multiplier = multiplier * 10 + (str[index] - 48);
+		++index;
+	}
+	return (symbol * multiplier);
 }

@@ -20,38 +20,51 @@ int	count_devider(char const *s, char c)
 	i = 0;
 	while (*s)
 	{
-		s++;
-		if (*s == c)
+		while (*s == c)
+			++s;
+		if (*s)
 			i++;
+		while (*s && *s != c)
+			s++;
 	}
 	return (i);
+}
+
+void	membook(char **tab, char const *s, char sep)
+{
+	char		**returned;
+	char const	*temp;
+
+	temp = s;
+	returned = tab;
+	while (*temp)
+	{
+		while (*s == sep)
+			s++;
+		temp = s;
+		while (*temp && *temp != sep)
+			++temp;
+		if (*temp == sep || temp > s)
+		{
+			*returned = ft_substr(s, 0, temp - s);
+			s = temp;
+			++returned;
+		}
+	}
+	*returned = 0;
 }
 
 char	**ft_split(char const *s, char c)
 {
 	char	**new;
-	char	*a;
-	int		new_index;
-	int		old_index;
-	int		i;
+	int		size;
 
-	a = ft_strtrim(s, &c);
-	i = 0;
-	new_index = 0;
-	old_index = 0;
-	new = malloc(sizeof(char *) * count_devider(a, c) + 2);
+	if (!s)
+		return (0);
+	size = count_devider(s, c);
+	new = (char **)malloc(sizeof(char *) * (size + 1));
 	if (!new)
 		return (0);
-	while (a[i++])
-	{
-		if (a[i] == c)
-		new[new_index] = ft_substr(s, old_index, (i - old_index));
-		new_index++;
-		old_index = i + 1;
-	}	
-	new[new_index] = ft_substr(s, old_index, (i - old_index));
-	new_index++;
-	old_index = i + 1;
-	new[new_index] = '\0';
+	membook(new, s, c);
 	return (new);
 }

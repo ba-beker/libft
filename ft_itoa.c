@@ -12,15 +12,16 @@
 
 #include "libft.h"
 #include <stdlib.h>
+#include <limits.h>
 
 int	int_len(int a)
 {
 	int	i;
 
 	i = 0;
-	if (a < 0)
-		a = -a;
-	while (a >= 1)
+	if (a <= 0)
+		i = 1;
+	while (a)
 	{
 		a /= 10;
 		i++;
@@ -32,26 +33,27 @@ char	*ft_itoa(int n)
 {
 	char	*new;
 	int		n_len;
-	int		is_negative;
 
-	is_negative = 0;
 	n_len = int_len(n);
-	new = malloc(sizeof(char) * n_len + 1);
+	new = ft_calloc(n_len + 1, sizeof(char));
 	if (!new)
 		return (0);
-	new[n_len] = '\0';
+	if (n == 0)
+		new[0] = '0';
 	if (n < 0)
 	{
+		new[0] = '-';
+		if (n == INT_MIN)
+		{
+			new[--n_len] = '8';
+			n /= 10;
+		}
 		n = -n;
-		is_negative = 1;
 	}
-	while (n_len)
+	while (n_len && n != 0)
 	{
-		new[n_len - 1] = (n % 10) + 48;
+		new[--n_len] = (n % 10) + 48;
 		n /= 10;
-		n_len--;
 	}
-	if (is_negative)
-		new = ft_strjoin("-", new);
 	return (new);
 }

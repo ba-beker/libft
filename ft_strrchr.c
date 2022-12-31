@@ -14,18 +14,16 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int	there_is_point;
+	int	i;
 
-	there_is_point = 0;
-	while (*str)
+	i = 0;
+	while (str[i])
+		i++;
+	while (i >= 0)
 	{
-		if (*str == c)
-			there_is_point = 1;
-		str++;
+		if (str[i] == (char)c)
+			return ((char *)(str + i));
+		i--;
 	}
-	if (there_is_point == 0)
-		return (0);
-	while (*str != (unsigned char) c)
-		str--;
-	return ((char *) str);
+	return (0);
 }
